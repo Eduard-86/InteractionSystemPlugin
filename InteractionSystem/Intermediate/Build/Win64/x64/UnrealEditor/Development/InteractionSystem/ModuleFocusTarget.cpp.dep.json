@@ -1,0 +1,31 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\private\\targetmodular\\modules\\modulefocustarget.cpp",
+        "ProvidedModule": "",
+        "PCH": "g:\\generalprot\\intermediate\\build\\win64\\x64\\general_proteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\interactionsystem\\definitions.interactionsystem.h",
+            "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\public\\targetmodular\\modules\\modulefocustarget.h",
+            "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\public\\targetmodular\\modules\\modulebasetarget.h",
+            "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\public\\interactorcomponent.h",
+            "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealeditor\\inc\\interactionsystem\\uht\\interactorcomponent.generated.h",
+            "d:\\ue\\ue_5.5\\engine\\source\\runtime\\coreuobject\\public\\uobject\\noexporttypes.h",
+            "d:\\ue\\ue_5.5\\engine\\source\\runtime\\coreuobject\\public\\uobject\\propertyaccessutil.h",
+            "d:\\ue\\ue_5.5\\engine\\source\\runtime\\coreuobject\\public\\serialization\\testundeclaredscriptstructobjectreferences.h",
+            "d:\\ue\\ue_5.5\\engine\\source\\runtime\\core\\public\\math\\unitconversion.h",
+            "d:\\ue\\ue_5.5\\engine\\source\\runtime\\core\\public\\math\\unitconversion.inl",
+            "d:\\ue\\ue_5.5\\engine\\source\\runtime\\core\\public\\internationalization\\polyglottextdata.h",
+            "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\public\\targetmodular\\interactiontargetcollisionmodular.h",
+            "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\public\\targetcollision\\interactiontargetcollision.h",
+            "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\public\\interactiontargetcomponent.h",
+            "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealeditor\\inc\\interactionsystem\\uht\\interactiontargetcomponent.generated.h",
+            "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealeditor\\inc\\interactionsystem\\uht\\interactiontargetcollision.generated.h",
+            "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealeditor\\inc\\interactionsystem\\uht\\interactiontargetcollisionmodular.generated.h",
+            "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealeditor\\inc\\interactionsystem\\uht\\modulebasetarget.generated.h",
+            "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealeditor\\inc\\interactionsystem\\uht\\modulefocustarget.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

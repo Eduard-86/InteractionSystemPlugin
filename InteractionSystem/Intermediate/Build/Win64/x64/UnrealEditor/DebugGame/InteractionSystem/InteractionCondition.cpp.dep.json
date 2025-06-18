@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\private\\interactioncondition.cpp",
+        "ProvidedModule": "",
+        "PCH": "g:\\generalprot\\intermediate\\build\\win64\\x64\\general_proteditor\\debuggame\\unrealed\\sharedpch.unrealed.project.nonoptimized.valapi.cpp20.h.pch",
+        "Includes": [
+            "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\x64\\unrealeditor\\debuggame\\interactionsystem\\definitions.interactionsystem.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

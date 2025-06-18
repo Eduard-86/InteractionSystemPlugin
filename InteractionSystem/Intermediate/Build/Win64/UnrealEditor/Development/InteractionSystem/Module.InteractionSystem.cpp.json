@@ -1,0 +1,31 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealeditor\\development\\interactionsystem\\module.interactionsystem.cpp",
+        "ProvidedModule": "",
+        "PCH": "f:\\generalprot\\intermediate\\build\\win64\\general_proteditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealeditor\\development\\interactionsystem\\definitions.interactionsystem.h",
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\private\\interactioncondition.cpp",
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\private\\interactionsystem.cpp",
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\public\\interactionsystem.h",
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\private\\interactiontargetcomponent.cpp",
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\public\\interactiontargetcomponent.h",
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealeditor\\inc\\interactionsystem\\interactiontargetcomponent.generated.h",
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\public\\interactorcomponent.h",
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealeditor\\inc\\interactionsystem\\interactorcomponent.generated.h",
+            "f:\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "f:\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "f:\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\charactermovementreplication.generated.h",
+            "f:\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "f:\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\rootmotionsource.generated.h",
+            "f:\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\character.generated.h",
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\private\\interactorcomponent.cpp",
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\private\\plasticinteractioncomponent.cpp",
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\public\\plasticinteractioncomponent.h",
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealeditor\\inc\\interactionsystem\\plasticinteractioncomponent.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

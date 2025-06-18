@@ -1,0 +1,19 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.InteractionSystem.cpp.obj": [
+			"InteractionCondition.cpp.obj",
+			"InteractionSystem.cpp.obj",
+			"InteractionTargetComponent.cpp.obj",
+			"InteractorComponent.cpp.obj",
+			"PlasticInteractionComponent.cpp.obj"
+		],
+		"Module.InteractionSystem.gen.cpp.obj": [
+			"InteractionCondition.gen.cpp.obj",
+			"InteractionSystem.init.gen.cpp.obj",
+			"InteractionTargetComponent.gen.cpp.obj",
+			"InteractorComponent.gen.cpp.obj",
+			"PlasticInteractionComponent.gen.cpp.obj"
+		]
+	}
+}

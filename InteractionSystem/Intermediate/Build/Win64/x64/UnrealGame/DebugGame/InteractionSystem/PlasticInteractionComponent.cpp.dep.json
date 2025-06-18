@@ -1,0 +1,17 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\private\\plasticinteractioncomponent.cpp",
+        "ProvidedModule": "",
+        "PCH": "g:\\generalprot\\intermediate\\build\\win64\\x64\\general_prot\\debuggame\\engine\\sharedpch.engine.project.nonoptimized.valapi.cpp20.h.pch",
+        "Includes": [
+            "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\x64\\unrealgame\\debuggame\\interactionsystem\\definitions.interactionsystem.h",
+            "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\public\\plasticinteractioncomponent.h",
+            "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\public\\interactiontargetcomponent.h",
+            "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealgame\\inc\\interactionsystem\\uht\\interactiontargetcomponent.generated.h",
+            "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealgame\\inc\\interactionsystem\\uht\\plasticinteractioncomponent.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

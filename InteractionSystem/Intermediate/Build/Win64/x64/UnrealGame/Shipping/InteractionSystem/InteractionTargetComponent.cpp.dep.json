@@ -1,0 +1,27 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\private\\interactiontargetcomponent.cpp",
+        "ProvidedModule": "",
+        "PCH": "g:\\generalprot\\intermediate\\build\\win64\\x64\\general_prot\\shipping\\engine\\sharedpch.engine.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\x64\\unrealgame\\shipping\\interactionsystem\\definitions.interactionsystem.h",
+            "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\public\\interactiontargetcomponent.h",
+            "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealgame\\inc\\interactionsystem\\uht\\interactiontargetcomponent.generated.h",
+            "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\public\\interactorcomponent.h",
+            "g:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealgame\\inc\\interactionsystem\\uht\\interactorcomponent.generated.h",
+            "d:\\ue\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
+            "d:\\ue\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\shapecomponent.generated.h",
+            "d:\\ue\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "d:\\ue\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "d:\\ue\\ue_5.4\\engine\\source\\runtime\\experimental\\iris\\core\\public\\iris\\serialization\\irisobjectreferencepackagemap.h",
+            "d:\\ue\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\iriscore\\uht\\irisobjectreferencepackagemap.generated.h",
+            "d:\\ue\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\charactermovementreplication.generated.h",
+            "d:\\ue\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "d:\\ue\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\rootmotionsource.generated.h",
+            "d:\\ue\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\character.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

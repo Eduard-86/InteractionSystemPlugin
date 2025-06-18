@@ -1,0 +1,32 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.InteractionSystem.cpp.obj": [
+			"DM_InteractorProximity.gen.cpp.obj",
+			"DM_InteractorRotation.gen.cpp.obj",
+			"InteractionCondition.gen.cpp.obj",
+			"InteractionSystem.init.gen.cpp.obj",
+			"InteractionTargetCollision.gen.cpp.obj",
+			"InteractionTargetCollisionModular.gen.cpp.obj",
+			"InteractionTargetComponent.gen.cpp.obj",
+			"InteractorComponent.gen.cpp.obj",
+			"ModuleBaseTarget.gen.cpp.obj",
+			"ModuleDisplayTarget.gen.cpp.obj",
+			"ModuleFocusTarget.gen.cpp.obj",
+			"PlasticInteractionComponent.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"InteractionCondition.cpp.obj",
+			"InteractionSystem.cpp.obj",
+			"InteractionTargetComponent.cpp.obj",
+			"InteractorComponent.cpp.obj",
+			"PlasticInteractionComponent.cpp.obj",
+			"InteractionTargetCollision.cpp.obj",
+			"InteractionTargetCollisionModular.cpp.obj",
+			"DM_InteractorProximity.cpp.obj",
+			"DM_InteractorRotation.cpp.obj",
+			"ModuleBaseTarget.cpp.obj",
+			"ModuleDisplayTarget.cpp.obj",
+			"ModuleFocusTarget.cpp.obj"
+		]
+	}
+}

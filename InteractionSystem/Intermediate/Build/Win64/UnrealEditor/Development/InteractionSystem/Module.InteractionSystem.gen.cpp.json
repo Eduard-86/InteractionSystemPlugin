@@ -1,0 +1,26 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealeditor\\development\\interactionsystem\\module.interactionsystem.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "f:\\generalprot\\intermediate\\build\\win64\\general_proteditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealeditor\\development\\interactionsystem\\definitions.interactionsystem.h",
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealeditor\\inc\\interactionsystem\\interactioncondition.gen.cpp",
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\public\\interactioncondition.h",
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealeditor\\inc\\interactionsystem\\interactioncondition.generated.h",
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealeditor\\inc\\interactionsystem\\interactionsystem.init.gen.cpp",
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealeditor\\inc\\interactionsystem\\interactiontargetcomponent.gen.cpp",
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\public\\interactiontargetcomponent.h",
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealeditor\\inc\\interactionsystem\\interactiontargetcomponent.generated.h",
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealeditor\\inc\\interactionsystem\\interactorcomponent.gen.cpp",
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\public\\interactorcomponent.h",
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealeditor\\inc\\interactionsystem\\interactorcomponent.generated.h",
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealeditor\\inc\\interactionsystem\\plasticinteractioncomponent.gen.cpp",
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\source\\interactionsystem\\public\\plasticinteractioncomponent.h",
+            "f:\\generalprot\\plugins\\teo_library_pl\\interactionsystem\\intermediate\\build\\win64\\unrealeditor\\inc\\interactionsystem\\plasticinteractioncomponent.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
