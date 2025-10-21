@@ -7,17 +7,6 @@
 
 #include "DM_InteractorRotation.generated.h"
 
-UCLASS(Blueprintable, meta = (DisplayName = "DS_InteractorRotation")) // , DefaultToInstanced , editinlinenew
-class UDS_InteractorRotation : public UModularSettings
-{
-	GENERATED_BODY()
-
-public:
-	
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Proximity Settings", meta = (ExposeOnSpawn = true))
-	float InteractorDeltaRotationXY = 45.0f;
-
-};
 
 /**
  * 
@@ -35,12 +24,16 @@ protected:
 
 	virtual float GetFocus_Implementation(const UInteractorComponent* TargetComponent) const;
 
-	virtual	void ExecuteActionEvent_Implementation(UModularSettingsBase* SettingsBlackboard, UPARAM(DisplayName = "Owner") UInteractionTargetCollisionModular* OwnerInteraction);
+	void Init_Implementation(const UInteractionTargetCollisionModular* OwnerTarget)
+	{
+		Super::Init_Implementation(OwnerTarget);
+		SetEnableFocus(true);
+	};
 
 protected:
 
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Proximity Settings", meta = (ExposeOnSpawn = true))
 	float ModuleInteractorDeltaRotationXY = 45.0f;
-	TObjectPtr<UInteractionTargetCollisionModular> ModuleOwnerInteract;
-	
+
 };
 

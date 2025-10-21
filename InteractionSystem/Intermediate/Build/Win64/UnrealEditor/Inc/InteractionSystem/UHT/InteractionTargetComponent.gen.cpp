@@ -621,7 +621,7 @@ struct Z_Construct_UClass_UInteractionTargetComponent_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "BlueprintType", "true" },
-		{ "DisplayName", "Interaction Target" },
+		{ "DisplayName", "Simple Interaction Target" },
 		{ "HideCategories", "Trigger PhysicsVolume" },
 		{ "IncludePath", "InteractionTargetComponent.h" },
 		{ "IsBlueprintBase", "true" },
@@ -637,7 +637,7 @@ struct Z_Construct_UClass_UInteractionTargetComponent_Statics
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/InteractionTargetComponent.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WontFocusClampValue_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WantFocusClampValue_MetaData[] = {
 		{ "Category", "InteractionTargetComponent" },
 		{ "ClampMax", "1.000000" },
 		{ "ClampMin", "0.000000" },
@@ -700,7 +700,7 @@ struct Z_Construct_UClass_UInteractionTargetComponent_Statics
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_KeyType;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_StartInteractType_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_StartInteractType;
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_WontFocusClampValue;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_WantFocusClampValue;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnInteract;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnReceiveFocus;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnLoseFocus;
@@ -728,7 +728,7 @@ const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UInteractionTarg
 const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UInteractionTargetComponent_Statics::NewProp_KeyType = { "KeyType", nullptr, (EPropertyFlags)0x0011000000000015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UInteractionTargetComponent, KeyType), Z_Construct_UEnum_InteractionSystem_EKeyInteractionType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_KeyType_MetaData), NewProp_KeyType_MetaData) }; // 1511770363
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UInteractionTargetComponent_Statics::NewProp_StartInteractType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UInteractionTargetComponent_Statics::NewProp_StartInteractType = { "StartInteractType", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UInteractionTargetComponent, StartInteractType), Z_Construct_UEnum_InteractionSystem_EStartInteractType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StartInteractType_MetaData), NewProp_StartInteractType_MetaData) }; // 1737810897
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UInteractionTargetComponent_Statics::NewProp_WontFocusClampValue = { "WontFocusClampValue", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UInteractionTargetComponent, WontFocusClampValue), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WontFocusClampValue_MetaData), NewProp_WontFocusClampValue_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UInteractionTargetComponent_Statics::NewProp_WantFocusClampValue = { "WantFocusClampValue", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UInteractionTargetComponent, WantFocusClampValue), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WantFocusClampValue_MetaData), NewProp_WantFocusClampValue_MetaData) };
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UInteractionTargetComponent_Statics::NewProp_OnInteract = { "OnInteract", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UInteractionTargetComponent, OnInteract), Z_Construct_UDelegateFunction_InteractionSystem_OnInteractSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnInteract_MetaData), NewProp_OnInteract_MetaData) }; // 4112153023
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UInteractionTargetComponent_Statics::NewProp_OnReceiveFocus = { "OnReceiveFocus", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UInteractionTargetComponent, OnReceiveFocus), Z_Construct_UDelegateFunction_InteractionSystem_InteractionTargetEventSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnReceiveFocus_MetaData), NewProp_OnReceiveFocus_MetaData) }; // 1674558060
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UInteractionTargetComponent_Statics::NewProp_OnLoseFocus = { "OnLoseFocus", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UInteractionTargetComponent, OnLoseFocus), Z_Construct_UDelegateFunction_InteractionSystem_InteractionTargetEventSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnLoseFocus_MetaData), NewProp_OnLoseFocus_MetaData) }; // 1674558060
@@ -741,7 +741,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UInteract
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInteractionTargetComponent_Statics::NewProp_KeyType,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInteractionTargetComponent_Statics::NewProp_StartInteractType_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInteractionTargetComponent_Statics::NewProp_StartInteractType,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInteractionTargetComponent_Statics::NewProp_WontFocusClampValue,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInteractionTargetComponent_Statics::NewProp_WantFocusClampValue,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInteractionTargetComponent_Statics::NewProp_OnInteract,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInteractionTargetComponent_Statics::NewProp_OnReceiveFocus,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInteractionTargetComponent_Statics::NewProp_OnLoseFocus,
@@ -796,10 +796,10 @@ struct Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionS
 		{ EStartInteractType_StaticEnum, TEXT("EStartInteractType"), &Z_Registration_Info_UEnum_EStartInteractType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1737810897U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UInteractionTargetComponent, UInteractionTargetComponent::StaticClass, TEXT("UInteractionTargetComponent"), &Z_Registration_Info_UClass_UInteractionTargetComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UInteractionTargetComponent), 2869926195U) },
+		{ Z_Construct_UClass_UInteractionTargetComponent, UInteractionTargetComponent::StaticClass, TEXT("UInteractionTargetComponent"), &Z_Registration_Info_UClass_UInteractionTargetComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UInteractionTargetComponent), 1403746051U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionSystem_Source_InteractionSystem_Public_InteractionTargetComponent_h_1066004618(TEXT("/Script/InteractionSystem"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionSystem_Source_InteractionSystem_Public_InteractionTargetComponent_h_2432357948(TEXT("/Script/InteractionSystem"),
 	Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionSystem_Source_InteractionSystem_Public_InteractionTargetComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionSystem_Source_InteractionSystem_Public_InteractionTargetComponent_h_Statics::ClassInfo),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionSystem_Source_InteractionSystem_Public_InteractionTargetComponent_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionSystem_Source_InteractionSystem_Public_InteractionTargetComponent_h_Statics::EnumInfo));

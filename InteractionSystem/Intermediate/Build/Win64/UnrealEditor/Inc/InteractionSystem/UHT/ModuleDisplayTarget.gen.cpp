@@ -6,102 +6,18 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "InteractionSystem/Public/TargetModular/Modules/ModuleDisplayTarget.h"
+#include "InteractionSystem/Public/TargetModular/InteractionTargetCollisionModular.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeModuleDisplayTarget() {}
 
 // Begin Cross Module References
-COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 INTERACTIONSYSTEM_API UClass* Z_Construct_UClass_UInteractionTargetCollisionModular_NoRegister();
 INTERACTIONSYSTEM_API UClass* Z_Construct_UClass_UInteractorComponent_NoRegister();
-INTERACTIONSYSTEM_API UClass* Z_Construct_UClass_UModularDisplaySettings();
-INTERACTIONSYSTEM_API UClass* Z_Construct_UClass_UModularDisplaySettings_NoRegister();
-INTERACTIONSYSTEM_API UClass* Z_Construct_UClass_UModularSettingsBase();
 INTERACTIONSYSTEM_API UClass* Z_Construct_UClass_UModuleBaseTarget();
 INTERACTIONSYSTEM_API UClass* Z_Construct_UClass_UModuleDisplayTarget();
 INTERACTIONSYSTEM_API UClass* Z_Construct_UClass_UModuleDisplayTarget_NoRegister();
 UPackage* Z_Construct_UPackage__Script_InteractionSystem();
 // End Cross Module References
-
-// Begin Class UModularDisplaySettings
-void UModularDisplaySettings::StaticRegisterNativesUModularDisplaySettings()
-{
-}
-IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UModularDisplaySettings);
-UClass* Z_Construct_UClass_UModularDisplaySettings_NoRegister()
-{
-	return UModularDisplaySettings::StaticClass();
-}
-struct Z_Construct_UClass_UModularDisplaySettings_Statics
-{
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
-		{ "BlueprintType", "true" },
-		{ "DisplayName", "Interaction Target Functional Module Settings" },
-		{ "IncludePath", "TargetModular/Modules/ModuleDisplayTarget.h" },
-		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "Public/TargetModular/Modules/ModuleDisplayTarget.h" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WidgetScale_MetaData[] = {
-		{ "Category", "Default Settings" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "//protected:\n" },
-#endif
-		{ "ExposeOnSpawn", "TRUE" },
-		{ "ModuleRelativePath", "Public/TargetModular/Modules/ModuleDisplayTarget.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "protected:" },
-#endif
-	};
-#endif // WITH_METADATA
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_WidgetScale;
-	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-	static UObject* (*const DependentSingletons[])();
-	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
-		TCppClassTypeTraits<UModularDisplaySettings>::IsAbstract,
-	};
-	static const UECodeGen_Private::FClassParams ClassParams;
-};
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UModularDisplaySettings_Statics::NewProp_WidgetScale = { "WidgetScale", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UModularDisplaySettings, WidgetScale), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WidgetScale_MetaData), NewProp_WidgetScale_MetaData) };
-const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UModularDisplaySettings_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UModularDisplaySettings_Statics::NewProp_WidgetScale,
-};
-static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UModularDisplaySettings_Statics::PropPointers) < 2048);
-UObject* (*const Z_Construct_UClass_UModularDisplaySettings_Statics::DependentSingletons[])() = {
-	(UObject* (*)())Z_Construct_UClass_UModularSettingsBase,
-	(UObject* (*)())Z_Construct_UPackage__Script_InteractionSystem,
-};
-static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UModularDisplaySettings_Statics::DependentSingletons) < 16);
-const UECodeGen_Private::FClassParams Z_Construct_UClass_UModularDisplaySettings_Statics::ClassParams = {
-	&UModularDisplaySettings::StaticClass,
-	nullptr,
-	&StaticCppClassTypeInfo,
-	DependentSingletons,
-	nullptr,
-	Z_Construct_UClass_UModularDisplaySettings_Statics::PropPointers,
-	nullptr,
-	UE_ARRAY_COUNT(DependentSingletons),
-	0,
-	UE_ARRAY_COUNT(Z_Construct_UClass_UModularDisplaySettings_Statics::PropPointers),
-	0,
-	0x000000A1u,
-	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UModularDisplaySettings_Statics::Class_MetaDataParams), Z_Construct_UClass_UModularDisplaySettings_Statics::Class_MetaDataParams)
-};
-UClass* Z_Construct_UClass_UModularDisplaySettings()
-{
-	if (!Z_Registration_Info_UClass_UModularDisplaySettings.OuterSingleton)
-	{
-		UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UModularDisplaySettings.OuterSingleton, Z_Construct_UClass_UModularDisplaySettings_Statics::ClassParams);
-	}
-	return Z_Registration_Info_UClass_UModularDisplaySettings.OuterSingleton;
-}
-template<> INTERACTIONSYSTEM_API UClass* StaticClass<UModularDisplaySettings>()
-{
-	return UModularDisplaySettings::StaticClass();
-}
-UModularDisplaySettings::UModularDisplaySettings(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UModularDisplaySettings);
-UModularDisplaySettings::~UModularDisplaySettings() {}
-// End Class UModularDisplaySettings
 
 // Begin Class UModuleDisplayTarget Function DisplayTick
 struct ModuleDisplayTarget_eventDisplayTick_Parms
@@ -187,14 +103,8 @@ struct Z_Construct_UFunction_UModuleDisplayTarget_FocusGet_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "//UFUNCTION(BlueprintImplementableEvent, meta = (DisplayName = \"Init\"))\n//void Init(UInteractionTargetCollisionModular* OwnerTarget);\n" },
-#endif
 		{ "DisplayName", "On Focus Received" },
 		{ "ModuleRelativePath", "Public/TargetModular/Modules/ModuleDisplayTarget.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "UFUNCTION(BlueprintImplementableEvent, meta = (DisplayName = \"Init\"))\nvoid Init(UInteractionTargetCollisionModular* OwnerTarget);" },
-#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OwnerTarget_MetaData[] = {
 		{ "EditInline", "true" },
@@ -479,17 +389,18 @@ struct Z_Construct_UClass_UModuleDisplayTarget_Statics
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/TargetModular/Modules/ModuleDisplayTarget.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SettingsClass_MetaData[] = {
-		{ "Category", "ModuleDisplayTarget" },
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WidgetScale_MetaData[] = {
+		{ "Category", "Default Settings" },
+		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/TargetModular/Modules/ModuleDisplayTarget.h" },
 	};
 #endif // WITH_METADATA
-	static const UECodeGen_Private::FClassPropertyParams NewProp_SettingsClass;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_WidgetScale;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UModuleDisplayTarget_DisplayTick, "DisplayTick" }, // 708194498
-		{ &Z_Construct_UFunction_UModuleDisplayTarget_FocusGet, "FocusGet" }, // 2175899086
+		{ &Z_Construct_UFunction_UModuleDisplayTarget_FocusGet, "FocusGet" }, // 1960661901
 		{ &Z_Construct_UFunction_UModuleDisplayTarget_FocusLose, "FocusLose" }, // 409137558
 		{ &Z_Construct_UFunction_UModuleDisplayTarget_OwnInteractorBeginOvelrap, "OwnInteractorBeginOvelrap" }, // 1748883746
 		{ &Z_Construct_UFunction_UModuleDisplayTarget_OwnInteractorEndOvelrap, "OwnInteractorEndOvelrap" }, // 28581212
@@ -500,9 +411,9 @@ struct Z_Construct_UClass_UModuleDisplayTarget_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_UModuleDisplayTarget_Statics::NewProp_SettingsClass = { "SettingsClass", nullptr, (EPropertyFlags)0x0014000000010015, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UModuleDisplayTarget, SettingsClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UModularDisplaySettings_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SettingsClass_MetaData), NewProp_SettingsClass_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UModuleDisplayTarget_Statics::NewProp_WidgetScale = { "WidgetScale", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UModuleDisplayTarget, WidgetScale), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WidgetScale_MetaData), NewProp_WidgetScale_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UModuleDisplayTarget_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UModuleDisplayTarget_Statics::NewProp_SettingsClass,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UModuleDisplayTarget_Statics::NewProp_WidgetScale,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UModuleDisplayTarget_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UModuleDisplayTarget_Statics::DependentSingletons[])() = {
@@ -522,7 +433,7 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UModuleDisplayTarget_St
 	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_UModuleDisplayTarget_Statics::PropPointers),
 	0,
-	0x001000A1u,
+	0x009010A1u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UModuleDisplayTarget_Statics::Class_MetaDataParams), Z_Construct_UClass_UModuleDisplayTarget_Statics::Class_MetaDataParams)
 };
 UClass* Z_Construct_UClass_UModuleDisplayTarget()
@@ -546,11 +457,10 @@ UModuleDisplayTarget::~UModuleDisplayTarget() {}
 struct Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionSystem_Source_InteractionSystem_Public_TargetModular_Modules_ModuleDisplayTarget_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UModularDisplaySettings, UModularDisplaySettings::StaticClass, TEXT("UModularDisplaySettings"), &Z_Registration_Info_UClass_UModularDisplaySettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UModularDisplaySettings), 180920211U) },
-		{ Z_Construct_UClass_UModuleDisplayTarget, UModuleDisplayTarget::StaticClass, TEXT("UModuleDisplayTarget"), &Z_Registration_Info_UClass_UModuleDisplayTarget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UModuleDisplayTarget), 1000599324U) },
+		{ Z_Construct_UClass_UModuleDisplayTarget, UModuleDisplayTarget::StaticClass, TEXT("UModuleDisplayTarget"), &Z_Registration_Info_UClass_UModuleDisplayTarget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UModuleDisplayTarget), 3177682809U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionSystem_Source_InteractionSystem_Public_TargetModular_Modules_ModuleDisplayTarget_h_2315813219(TEXT("/Script/InteractionSystem"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionSystem_Source_InteractionSystem_Public_TargetModular_Modules_ModuleDisplayTarget_h_3296692254(TEXT("/Script/InteractionSystem"),
 	Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionSystem_Source_InteractionSystem_Public_TargetModular_Modules_ModuleDisplayTarget_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionSystem_Source_InteractionSystem_Public_TargetModular_Modules_ModuleDisplayTarget_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

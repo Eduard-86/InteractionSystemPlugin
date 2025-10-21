@@ -147,7 +147,7 @@ void UInteractionTargetComponent::ReattachParentCollision(UPrimitiveComponent* N
 
 float UInteractionTargetComponent::WantFocus_Implementation(const UInteractorComponent* InteractorComponent) const
 {
-	return WontFocusClampValue;
+	return WantFocusClampValue;
 }
 
 UInteractorComponent* UInteractionTargetComponent::FindInteractorComponent(AActor* OtherActor,

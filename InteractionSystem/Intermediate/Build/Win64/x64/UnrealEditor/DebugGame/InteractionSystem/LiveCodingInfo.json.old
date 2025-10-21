@@ -14,6 +14,8 @@
 			"ModuleDisplayTarget.gen.cpp.obj",
 			"ModuleFocusTarget.gen.cpp.obj",
 			"PlasticInteractionComponent.gen.cpp.obj",
+			"TestModular.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
 			"InteractionCondition.cpp.obj",
 			"InteractionSystem.cpp.obj",
 			"InteractionTargetComponent.cpp.obj",
@@ -25,7 +27,8 @@
 			"DM_InteractorRotation.cpp.obj",
 			"ModuleBaseTarget.cpp.obj",
 			"ModuleDisplayTarget.cpp.obj",
-			"ModuleFocusTarget.cpp.obj"
+			"ModuleFocusTarget.cpp.obj",
+			"TestModular.cpp.obj"
 		]
 	}
 }

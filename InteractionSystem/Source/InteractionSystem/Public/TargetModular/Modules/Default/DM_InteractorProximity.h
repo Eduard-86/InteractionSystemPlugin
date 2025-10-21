@@ -7,32 +7,6 @@
 
 #include "DM_InteractorProximity.generated.h"
 
-
-
-UCLASS(Blueprintable, meta = (DisplayName = "DS_InteractorProximity")) // , DefaultToInstanced , editinlinenew
-class UDS_InteractorProximity : public UModularSettings
-{
-	GENERATED_BODY()
-
-public:
-
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Proximity Settings", meta = (ExposeOnSpawn = true))
-	float InteractorProximityThreshold = 200.f;
-
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Proximity Settings", meta = (ExposeOnSpawn = true))
-	bool IgnoreDeltaZ = false;
-	/*
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Default Settings", meta = (ExposeOnSpawn = true))
-	bool IgnoreDeltaZ = false;
-
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Default Settings", meta = (ExposeOnSpawn = true))
-	bool IsDebug = false;
-
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Default Settings", meta = (ExposeOnSpawn = true))
-	ELogicFocusType LogicWorkType = ELogicFocusType::Standard;
-	*/
-};
-
 /**
  * 
  */ 
@@ -43,21 +17,24 @@ class INTERACTIONSYSTEM_API UDM_InteractorProximity : public UModuleFocusTarget
 
 	UDM_InteractorProximity(); 
 
-
 	friend UInteractionTargetCollisionModular;
-
-public:
 
 protected:
 
 	virtual float GetFocus_Implementation(const UInteractorComponent* TargetComponent) const;
 
-	virtual	void ExecuteActionEvent_Implementation(UModularSettingsBase* SettingsBlackboard, UPARAM(DisplayName = "Owner") UInteractionTargetCollisionModular* OwnerInteraction);
+	virtual void Init_Implementation(const UInteractionTargetCollisionModular* OwnerTarget)
+	{
+		Super::Init_Implementation(OwnerTarget);
+		SetEnableFocus(true);
+	};
 
 protected:
 
-	bool ModuleIgnoreDeltaZ = false;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Proximity Settings", meta = (ExposeOnSpawn = true))
 	float ModuleInteractorProximityThreshold = 200.f;
-	TObjectPtr<UInteractionTargetCollisionModular> ModuleOwnerInteract;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Proximity Settings", meta = (ExposeOnSpawn = true))
+	bool ModuleIgnoreDeltaZ = false;
 
 };

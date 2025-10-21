@@ -92,7 +92,7 @@ struct Z_Construct_UClass_UInteractionTargetCollision_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "BlueprintType", "true" },
-		{ "DisplayName", "Interaction Target With Collision" },
+		{ "DisplayName", "Collision Interaction Target" },
 		{ "HideCategories", "Trigger PhysicsVolume" },
 		{ "IncludePath", "TargetCollision/InteractionTargetCollision.h" },
 		{ "IsBlueprintBase", "true" },
@@ -214,10 +214,10 @@ struct Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionS
 		{ ECollisionInteractionType_StaticEnum, TEXT("ECollisionInteractionType"), &Z_Registration_Info_UEnum_ECollisionInteractionType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2927109295U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UInteractionTargetCollision, UInteractionTargetCollision::StaticClass, TEXT("UInteractionTargetCollision"), &Z_Registration_Info_UClass_UInteractionTargetCollision, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UInteractionTargetCollision), 647413713U) },
+		{ Z_Construct_UClass_UInteractionTargetCollision, UInteractionTargetCollision::StaticClass, TEXT("UInteractionTargetCollision"), &Z_Registration_Info_UClass_UInteractionTargetCollision, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UInteractionTargetCollision), 2876842185U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionSystem_Source_InteractionSystem_Public_TargetCollision_InteractionTargetCollision_h_2700927219(TEXT("/Script/InteractionSystem"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionSystem_Source_InteractionSystem_Public_TargetCollision_InteractionTargetCollision_h_3450453566(TEXT("/Script/InteractionSystem"),
 	Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionSystem_Source_InteractionSystem_Public_TargetCollision_InteractionTargetCollision_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionSystem_Source_InteractionSystem_Public_TargetCollision_InteractionTargetCollision_h_Statics::ClassInfo),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionSystem_Source_InteractionSystem_Public_TargetCollision_InteractionTargetCollision_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionSystem_Source_InteractionSystem_Public_TargetCollision_InteractionTargetCollision_h_Statics::EnumInfo));

@@ -6,15 +6,12 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "InteractionSystem/Public/TargetModular/Modules/ModuleFocusTarget.h"
+#include "InteractionSystem/Public/TargetModular/InteractionTargetCollisionModular.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeModuleFocusTarget() {}
 
 // Begin Cross Module References
-COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 INTERACTIONSYSTEM_API UClass* Z_Construct_UClass_UInteractorComponent_NoRegister();
-INTERACTIONSYSTEM_API UClass* Z_Construct_UClass_UModularSettings();
-INTERACTIONSYSTEM_API UClass* Z_Construct_UClass_UModularSettings_NoRegister();
-INTERACTIONSYSTEM_API UClass* Z_Construct_UClass_UModularSettingsBase();
 INTERACTIONSYSTEM_API UClass* Z_Construct_UClass_UModuleBaseTarget();
 INTERACTIONSYSTEM_API UClass* Z_Construct_UClass_UModuleFocusTarget();
 INTERACTIONSYSTEM_API UClass* Z_Construct_UClass_UModuleFocusTarget_NoRegister();
@@ -75,117 +72,6 @@ UEnum* Z_Construct_UEnum_InteractionSystem_ELogicFocusType()
 	return Z_Registration_Info_UEnum_ELogicFocusType.InnerSingleton;
 }
 // End Enum ELogicFocusType
-
-// Begin Class UModularSettings
-void UModularSettings::StaticRegisterNativesUModularSettings()
-{
-}
-IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UModularSettings);
-UClass* Z_Construct_UClass_UModularSettings_NoRegister()
-{
-	return UModularSettings::StaticClass();
-}
-struct Z_Construct_UClass_UModularSettings_Statics
-{
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
-		{ "DisplayName", "Interaction Target Focus Module Settings" },
-		{ "IncludePath", "TargetModular/Modules/ModuleFocusTarget.h" },
-		{ "ModuleRelativePath", "Public/TargetModular/Modules/ModuleFocusTarget.h" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FocusMultiplier_MetaData[] = {
-		{ "Category", "Default Settings" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "//protected:\n" },
-#endif
-		{ "ExposeOnSpawn", "TRUE" },
-		{ "ModuleRelativePath", "Public/TargetModular/Modules/ModuleFocusTarget.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "protected:" },
-#endif
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FocusBias_MetaData[] = {
-		{ "Category", "Default Settings" },
-		{ "ExposeOnSpawn", "TRUE" },
-		{ "ModuleRelativePath", "Public/TargetModular/Modules/ModuleFocusTarget.h" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_IsDebug_MetaData[] = {
-		{ "Category", "Default Settings" },
-		{ "ExposeOnSpawn", "TRUE" },
-		{ "ModuleRelativePath", "Public/TargetModular/Modules/ModuleFocusTarget.h" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LogicWorkType_MetaData[] = {
-		{ "Category", "Default Settings" },
-		{ "ExposeOnSpawn", "TRUE" },
-		{ "ModuleRelativePath", "Public/TargetModular/Modules/ModuleFocusTarget.h" },
-	};
-#endif // WITH_METADATA
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_FocusMultiplier;
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_FocusBias;
-	static void NewProp_IsDebug_SetBit(void* Obj);
-	static const UECodeGen_Private::FBoolPropertyParams NewProp_IsDebug;
-	static const UECodeGen_Private::FBytePropertyParams NewProp_LogicWorkType_Underlying;
-	static const UECodeGen_Private::FEnumPropertyParams NewProp_LogicWorkType;
-	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-	static UObject* (*const DependentSingletons[])();
-	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
-		TCppClassTypeTraits<UModularSettings>::IsAbstract,
-	};
-	static const UECodeGen_Private::FClassParams ClassParams;
-};
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UModularSettings_Statics::NewProp_FocusMultiplier = { "FocusMultiplier", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UModularSettings, FocusMultiplier), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FocusMultiplier_MetaData), NewProp_FocusMultiplier_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UModularSettings_Statics::NewProp_FocusBias = { "FocusBias", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UModularSettings, FocusBias), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FocusBias_MetaData), NewProp_FocusBias_MetaData) };
-void Z_Construct_UClass_UModularSettings_Statics::NewProp_IsDebug_SetBit(void* Obj)
-{
-	((UModularSettings*)Obj)->IsDebug = 1;
-}
-const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UModularSettings_Statics::NewProp_IsDebug = { "IsDebug", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UModularSettings), &Z_Construct_UClass_UModularSettings_Statics::NewProp_IsDebug_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IsDebug_MetaData), NewProp_IsDebug_MetaData) };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UModularSettings_Statics::NewProp_LogicWorkType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UModularSettings_Statics::NewProp_LogicWorkType = { "LogicWorkType", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UModularSettings, LogicWorkType), Z_Construct_UEnum_InteractionSystem_ELogicFocusType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LogicWorkType_MetaData), NewProp_LogicWorkType_MetaData) }; // 4241112352
-const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UModularSettings_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UModularSettings_Statics::NewProp_FocusMultiplier,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UModularSettings_Statics::NewProp_FocusBias,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UModularSettings_Statics::NewProp_IsDebug,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UModularSettings_Statics::NewProp_LogicWorkType_Underlying,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UModularSettings_Statics::NewProp_LogicWorkType,
-};
-static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UModularSettings_Statics::PropPointers) < 2048);
-UObject* (*const Z_Construct_UClass_UModularSettings_Statics::DependentSingletons[])() = {
-	(UObject* (*)())Z_Construct_UClass_UModularSettingsBase,
-	(UObject* (*)())Z_Construct_UPackage__Script_InteractionSystem,
-};
-static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UModularSettings_Statics::DependentSingletons) < 16);
-const UECodeGen_Private::FClassParams Z_Construct_UClass_UModularSettings_Statics::ClassParams = {
-	&UModularSettings::StaticClass,
-	nullptr,
-	&StaticCppClassTypeInfo,
-	DependentSingletons,
-	nullptr,
-	Z_Construct_UClass_UModularSettings_Statics::PropPointers,
-	nullptr,
-	UE_ARRAY_COUNT(DependentSingletons),
-	0,
-	UE_ARRAY_COUNT(Z_Construct_UClass_UModularSettings_Statics::PropPointers),
-	0,
-	0x000000A0u,
-	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UModularSettings_Statics::Class_MetaDataParams), Z_Construct_UClass_UModularSettings_Statics::Class_MetaDataParams)
-};
-UClass* Z_Construct_UClass_UModularSettings()
-{
-	if (!Z_Registration_Info_UClass_UModularSettings.OuterSingleton)
-	{
-		UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UModularSettings.OuterSingleton, Z_Construct_UClass_UModularSettings_Statics::ClassParams);
-	}
-	return Z_Registration_Info_UClass_UModularSettings.OuterSingleton;
-}
-template<> INTERACTIONSYSTEM_API UClass* StaticClass<UModularSettings>()
-{
-	return UModularSettings::StaticClass();
-}
-UModularSettings::UModularSettings(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UModularSettings);
-UModularSettings::~UModularSettings() {}
-// End Class UModularSettings
 
 // Begin Class UModuleFocusTarget Function GetFocus
 struct ModuleFocusTarget_eventGetFocus_Parms
@@ -279,19 +165,43 @@ struct Z_Construct_UClass_UModuleFocusTarget_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "/**\n * \n */" },
+		{ "Comment", "/**\nUCLASS(meta = (DisplayName = \"Interaction Target Focus Module Settings\")) // , DefaultToInstanced , editinlinenew\nclass UModularSettings : public UModularSettingsBase\n{\n\x09GENERATED_BODY()\n\npublic:\n//protected:\n\n\n\x09UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = \"Default Settings\", meta = (ExposeOnSpawn = true))\n\x09\x09""float FocusMultiplier = 1.f;\n\n\x09UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = \"Default Settings\", meta = (ExposeOnSpawn = true))\n\x09\x09""float FocusBias = 0.f;\n\n\x09UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = \"Default Settings\", meta = (ExposeOnSpawn = true))\n\x09\x09""bool IsDebug = false;\n\n\x09UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = \"Default Settings\", meta = (ExposeOnSpawn = true))\n\x09\x09""ELogicFocusType LogicWorkType = ELogicFocusType::Standard;\n\n};\n\n\n * \n */" },
 #endif
 		{ "DisplayName", "Interaction Target Focus Module" },
 		{ "IncludePath", "TargetModular/Modules/ModuleFocusTarget.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/TargetModular/Modules/ModuleFocusTarget.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "UCLASS(meta = (DisplayName = \"Interaction Target Focus Module Settings\")) // , DefaultToInstanced , editinlinenew\nclass UModularSettings : public UModularSettingsBase\n{\n       GENERATED_BODY()\n\npublic:\n//protected:\n\n\n       UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = \"Default Settings\", meta = (ExposeOnSpawn = true))\n               float FocusMultiplier = 1.f;\n\n       UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = \"Default Settings\", meta = (ExposeOnSpawn = true))\n               float FocusBias = 0.f;\n\n       UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = \"Default Settings\", meta = (ExposeOnSpawn = true))\n               bool IsDebug = false;\n\n       UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = \"Default Settings\", meta = (ExposeOnSpawn = true))\n               ELogicFocusType LogicWorkType = ELogicFocusType::Standard;\n\n};" },
+#endif
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SettingsClass_MetaData[] = {
-		{ "Category", "ModuleFocusTarget" },
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FocusMultiplier_MetaData[] = {
+		{ "Category", "Default Settings" },
+		{ "ExposeOnSpawn", "TRUE" },
+		{ "ModuleRelativePath", "Public/TargetModular/Modules/ModuleFocusTarget.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FocusBias_MetaData[] = {
+		{ "Category", "Default Settings" },
+		{ "ExposeOnSpawn", "TRUE" },
+		{ "ModuleRelativePath", "Public/TargetModular/Modules/ModuleFocusTarget.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_IsDebug_MetaData[] = {
+		{ "Category", "Default Settings" },
+		{ "ExposeOnSpawn", "TRUE" },
+		{ "ModuleRelativePath", "Public/TargetModular/Modules/ModuleFocusTarget.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LogicWorkType_MetaData[] = {
+		{ "Category", "Default Settings" },
+		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/TargetModular/Modules/ModuleFocusTarget.h" },
 	};
 #endif // WITH_METADATA
-	static const UECodeGen_Private::FClassPropertyParams NewProp_SettingsClass;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_FocusMultiplier;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_FocusBias;
+	static void NewProp_IsDebug_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_IsDebug;
+	static const UECodeGen_Private::FBytePropertyParams NewProp_LogicWorkType_Underlying;
+	static const UECodeGen_Private::FEnumPropertyParams NewProp_LogicWorkType;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -303,9 +213,21 @@ struct Z_Construct_UClass_UModuleFocusTarget_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_UModuleFocusTarget_Statics::NewProp_SettingsClass = { "SettingsClass", nullptr, (EPropertyFlags)0x0014000000000015, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UModuleFocusTarget, SettingsClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UModularSettings_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SettingsClass_MetaData), NewProp_SettingsClass_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UModuleFocusTarget_Statics::NewProp_FocusMultiplier = { "FocusMultiplier", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UModuleFocusTarget, FocusMultiplier), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FocusMultiplier_MetaData), NewProp_FocusMultiplier_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UModuleFocusTarget_Statics::NewProp_FocusBias = { "FocusBias", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UModuleFocusTarget, FocusBias), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FocusBias_MetaData), NewProp_FocusBias_MetaData) };
+void Z_Construct_UClass_UModuleFocusTarget_Statics::NewProp_IsDebug_SetBit(void* Obj)
+{
+	((UModuleFocusTarget*)Obj)->IsDebug = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UModuleFocusTarget_Statics::NewProp_IsDebug = { "IsDebug", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UModuleFocusTarget), &Z_Construct_UClass_UModuleFocusTarget_Statics::NewProp_IsDebug_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IsDebug_MetaData), NewProp_IsDebug_MetaData) };
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UModuleFocusTarget_Statics::NewProp_LogicWorkType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UModuleFocusTarget_Statics::NewProp_LogicWorkType = { "LogicWorkType", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UModuleFocusTarget, LogicWorkType), Z_Construct_UEnum_InteractionSystem_ELogicFocusType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LogicWorkType_MetaData), NewProp_LogicWorkType_MetaData) }; // 4241112352
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UModuleFocusTarget_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UModuleFocusTarget_Statics::NewProp_SettingsClass,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UModuleFocusTarget_Statics::NewProp_FocusMultiplier,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UModuleFocusTarget_Statics::NewProp_FocusBias,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UModuleFocusTarget_Statics::NewProp_IsDebug,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UModuleFocusTarget_Statics::NewProp_LogicWorkType_Underlying,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UModuleFocusTarget_Statics::NewProp_LogicWorkType,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UModuleFocusTarget_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UModuleFocusTarget_Statics::DependentSingletons[])() = {
@@ -325,7 +247,7 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UModuleFocusTarget_Stat
 	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_UModuleFocusTarget_Statics::PropPointers),
 	0,
-	0x001000A1u,
+	0x009010A1u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UModuleFocusTarget_Statics::Class_MetaDataParams), Z_Construct_UClass_UModuleFocusTarget_Statics::Class_MetaDataParams)
 };
 UClass* Z_Construct_UClass_UModuleFocusTarget()
@@ -352,11 +274,10 @@ struct Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionS
 		{ ELogicFocusType_StaticEnum, TEXT("ELogicFocusType"), &Z_Registration_Info_UEnum_ELogicFocusType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4241112352U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UModularSettings, UModularSettings::StaticClass, TEXT("UModularSettings"), &Z_Registration_Info_UClass_UModularSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UModularSettings), 716479067U) },
-		{ Z_Construct_UClass_UModuleFocusTarget, UModuleFocusTarget::StaticClass, TEXT("UModuleFocusTarget"), &Z_Registration_Info_UClass_UModuleFocusTarget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UModuleFocusTarget), 750037059U) },
+		{ Z_Construct_UClass_UModuleFocusTarget, UModuleFocusTarget::StaticClass, TEXT("UModuleFocusTarget"), &Z_Registration_Info_UClass_UModuleFocusTarget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UModuleFocusTarget), 2613260723U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionSystem_Source_InteractionSystem_Public_TargetModular_Modules_ModuleFocusTarget_h_1860064387(TEXT("/Script/InteractionSystem"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionSystem_Source_InteractionSystem_Public_TargetModular_Modules_ModuleFocusTarget_h_896390975(TEXT("/Script/InteractionSystem"),
 	Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionSystem_Source_InteractionSystem_Public_TargetModular_Modules_ModuleFocusTarget_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionSystem_Source_InteractionSystem_Public_TargetModular_Modules_ModuleFocusTarget_h_Statics::ClassInfo),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionSystem_Source_InteractionSystem_Public_TargetModular_Modules_ModuleFocusTarget_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GeneralProt_Plugins_TEO_Library_PL_InteractionSystem_Source_InteractionSystem_Public_TargetModular_Modules_ModuleFocusTarget_h_Statics::EnumInfo));

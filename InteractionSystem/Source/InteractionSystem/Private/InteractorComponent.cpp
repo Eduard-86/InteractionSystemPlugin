@@ -418,7 +418,7 @@ void UInteractorComponent::FindObservTargets()
 
 		ActorChildren = Actor->GetComponents();
 
-		int TargetCounter = 0;
+		//int TargetCounter = 0;
 
 		for (UActorComponent* Child : ActorChildren)
 		{
@@ -432,11 +432,11 @@ void UInteractorComponent::FindObservTargets()
 
 				if (InteractorTarget->IsCollisionValid() && InteractorTarget->GetInteractiorActivityState())
 				{
-					++TargetCounter;
+				//	++TargetCounter;
 					BeginObserving(InteractorTarget);
 				}
 			}
 		}
-		checkf(TargetCounter <= 1, TEXT("More than one target found in actor!"));
+		//checkf(TargetCounter <= 1, TEXT("More than one target found in actor!"));
 	}
 }

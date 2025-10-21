@@ -7,40 +7,19 @@
 
 #include "ModuleDisplayTarget.generated.h"
 
-UCLASS(Blueprintable, Abstract, meta = (DisplayName = "Interaction Target Functional Module Settings")) // , DefaultToInstanced , editinlinenew
-class UModularDisplaySettings : public UModularSettingsBase
-{
-	GENERATED_BODY()
-
-public:
-	//protected:
-
-
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Default Settings", meta = (ExposeOnSpawn = true))
-	float WidgetScale = 1.f;
-
-};
-
-
 UCLASS(Blueprintable, Abstract, meta = (DisplayName = "Interaction Target Functional Module"))
 class INTERACTIONSYSTEM_API UModuleDisplayTarget: public UModuleBaseTarget
 {
 	GENERATED_BODY()
 
-//public:
-
 	friend UInteractionTargetCollisionModular;
 
 public:
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
-		TSubclassOf<UModularDisplaySettings> SettingsClass = UModularDisplaySettings::StaticClass();
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Default Settings", meta = (ExposeOnSpawn = true))
+	float WidgetScale = 1.f;
 
 protected:
-
-	//UFUNCTION(BlueprintImplementableEvent, meta = (DisplayName = "Init"))
-	//void Init(UInteractionTargetCollisionModular* OwnerTarget);
-
 
 	UFUNCTION(BlueprintNativeEvent, meta = (DisplayName = "On Focus Received"))
 	void FocusGet(UInteractionTargetCollisionModular* OwnerTarget, const UInteractorComponent* InteractorComponent);

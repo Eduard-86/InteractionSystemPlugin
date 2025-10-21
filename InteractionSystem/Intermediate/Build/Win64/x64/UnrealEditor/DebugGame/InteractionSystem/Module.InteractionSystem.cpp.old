@@ -11,3 +11,5 @@
 #include "G:/GeneralProt/Plugins/TEO_Library_PL/InteractionSystem/Intermediate/Build/Win64/UnrealEditor/Inc/InteractionSystem/UHT/ModuleDisplayTarget.gen.cpp"
 #include "G:/GeneralProt/Plugins/TEO_Library_PL/InteractionSystem/Intermediate/Build/Win64/UnrealEditor/Inc/InteractionSystem/UHT/ModuleFocusTarget.gen.cpp"
 #include "G:/GeneralProt/Plugins/TEO_Library_PL/InteractionSystem/Intermediate/Build/Win64/UnrealEditor/Inc/InteractionSystem/UHT/PlasticInteractionComponent.gen.cpp"
+#include "G:/GeneralProt/Plugins/TEO_Library_PL/InteractionSystem/Intermediate/Build/Win64/UnrealEditor/Inc/InteractionSystem/UHT/TestModular.gen.cpp"
+#include "G:/GeneralProt/Plugins/TEO_Library_PL/InteractionSystem/Intermediate/Build/Win64/x64/UnrealEditor/DebugGame/InteractionSystem/PerModuleInline.gen.cpp"

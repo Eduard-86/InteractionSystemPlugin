@@ -49,7 +49,7 @@ enum class EStartInteractType : uint8 {
 class UShapeComponent;
 class UInteractorComponent;
 
-UCLASS(Blueprintable, meta = (BlueprintSpawnableComponent, DisplayName = "Interaction Target"), EditInlineNew)
+UCLASS(Blueprintable, meta = (BlueprintSpawnableComponent, DisplayName = "Simple Interaction Target"), EditInlineNew)
 class INTERACTIONSYSTEM_API UInteractionTargetComponent : public USceneComponent
 {
     GENERATED_BODY()
@@ -67,7 +67,7 @@ public:
 	EStartInteractType StartInteractType = EStartInteractType::KeyInput;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (ClampMin = 0.f, ClampMax = 1.f))
-	float WontFocusClampValue = 1.0f;
+	float WantFocusClampValue = 1.0f;
 
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Set Enabled"))
 	void SetInteractorActivityState(bool NewState);

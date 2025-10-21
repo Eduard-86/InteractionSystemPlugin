@@ -10,6 +10,7 @@
 
 #include "ModuleBaseTarget.generated.h"
 
+/*
 UCLASS(Blueprintable, Abstract) // , DefaultToInstanced , editinlinenew
 class UModularSettingsBase : public UObject
 {
@@ -18,14 +19,23 @@ class UModularSettingsBase : public UObject
 public:
 	
 };
+*/
 
-UCLASS(Blueprintable, Abstract)
+UCLASS(Blueprintable, Abstract, Within = InteractionTargetCollisionModular, EditInlineNew)
 class INTERACTIONSYSTEM_API UModuleBaseTarget : public UObject
 {
 	GENERATED_BODY()
 
+	friend UInteractionTargetCollisionModular;
+		
 public:
-	
+
+
+	//UModuleBaseTarget::UModuleBaseTarget()
+	//	:OwnerInteractTarget(GetOuterUInteractionTargetCollisionModular())
+	//{}
+
+	//UModuleBaseTarget();
 
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Set Enabled"))
 		void SetEnableFocus(bool EnableState)
@@ -44,9 +54,16 @@ protected:
 	UPROPERTY(BlueprintReadOnly, meta = (ExposeOnSpawn = true))
 	bool Enable = false;
 
-	UFUNCTION(BlueprintNativeEvent, meta = (DisplayName = "Initialize"))
-	void ExecuteActionEvent(UModularSettingsBase* SettingsBlackboard, UPARAM(DisplayName = "Owner") UInteractionTargetCollisionModular* OwnerInteraction);
+	UPROPERTY(BlueprintReadOnly)
+	const UInteractionTargetCollisionModular*  OwnerInteractTarget;
 
-	virtual	void ExecuteActionEvent_Implementation(UModularSettingsBase* SettingsBlackboard, UPARAM(DisplayName = "Owner") UInteractionTargetCollisionModular* OwnerInteraction) { return; };
+protected:
+	//BlueprintImplementableEvent
+	UFUNCTION(BlueprintNativeEvent, meta = (DisplayName = "Init"))
+    void Init(const UInteractionTargetCollisionModular* OwnerTarget);
 
+	virtual void Init_Implementation(const UInteractionTargetCollisionModular* OwnerTarget)
+	{
+		OwnerInteractTarget = GetOuterUInteractionTargetCollisionModular();
+	};
 };

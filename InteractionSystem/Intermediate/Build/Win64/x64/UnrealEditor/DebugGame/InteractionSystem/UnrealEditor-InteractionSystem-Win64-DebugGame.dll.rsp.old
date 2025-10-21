@@ -21,9 +21,9 @@
 /ALTERNATENAME:__imp___std_init_once_complete=__imp_InitOnceComplete
 /DELAYLOAD:"d3d12.dll"
 /DELAYLOAD:"DBGHELP.DLL"
-/LIBPATH:"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\lib\x64"
-/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\ucrt\x64"
-/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\um\x64"
+/LIBPATH:"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\lib\x64"
+/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\ucrt\x64"
+/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\um\x64"
 /NODEFAULTLIB:"LIBCMT"
 /NODEFAULTLIB:"LIBCPMT"
 /NODEFAULTLIB:"LIBCMTD"
@@ -35,6 +35,7 @@
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN:6
+/NOIMPLIB
 "G:\GeneralProt\Intermediate\Build\Win64\x64\General_ProtEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.Project.NonOptimized.ValApi.Cpp20.h.obj"
 "G:\GeneralProt\Plugins\TEO_Library_PL\InteractionSystem\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\InteractionSystem\Module.InteractionSystem.cpp.obj"
 "G:\GeneralProt\Plugins\TEO_Library_PL\InteractionSystem\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\InteractionSystem\InteractionCondition.cpp.obj"
@@ -44,6 +45,7 @@
 "G:\GeneralProt\Plugins\TEO_Library_PL\InteractionSystem\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\InteractionSystem\PlasticInteractionComponent.cpp.obj"
 "G:\GeneralProt\Plugins\TEO_Library_PL\InteractionSystem\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\InteractionSystem\InteractionTargetCollision.cpp.obj"
 "G:\GeneralProt\Plugins\TEO_Library_PL\InteractionSystem\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\InteractionSystem\InteractionTargetCollisionModular.cpp.obj"
+"G:\GeneralProt\Plugins\TEO_Library_PL\InteractionSystem\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\InteractionSystem\TestModular.cpp.obj"
 "G:\GeneralProt\Plugins\TEO_Library_PL\InteractionSystem\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\InteractionSystem\ModuleBaseTarget.cpp.obj"
 "G:\GeneralProt\Plugins\TEO_Library_PL\InteractionSystem\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\InteractionSystem\ModuleDisplayTarget.cpp.obj"
 "G:\GeneralProt\Plugins\TEO_Library_PL\InteractionSystem\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\InteractionSystem\ModuleFocusTarget.cpp.obj"
@@ -82,6 +84,5 @@
 "dwmapi.lib"
 "imm32.lib"
 /OUT:"G:\GeneralProt\Plugins\TEO_Library_PL\InteractionSystem\Binaries\Win64\UnrealEditor-InteractionSystem-Win64-DebugGame.dll"
-/IMPLIB:"G:\GeneralProt\Plugins\TEO_Library_PL\InteractionSystem\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\InteractionSystem\UnrealEditor-InteractionSystem-Win64-DebugGame.sup.lib"
 /PDB:"G:\GeneralProt\Plugins\TEO_Library_PL\InteractionSystem\Binaries\Win64\UnrealEditor-InteractionSystem-Win64-DebugGame.pdb"
 /ignore:4078

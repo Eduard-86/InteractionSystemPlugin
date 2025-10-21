@@ -18,7 +18,7 @@ enum class ECollisionInteractionType : uint8 {
 
 class USphereComponent;
 
-UCLASS(Blueprintable, meta = (BlueprintSpawnableComponent, DisplayName = "Interaction Target With Collision"), EditInlineNew)
+UCLASS(Blueprintable, meta = (BlueprintSpawnableComponent, DisplayName = "Collision Interaction Target"), EditInlineNew)
 class INTERACTIONSYSTEM_API UInteractionTargetCollision : public UInteractionTargetComponent // TODO: Merge with parent
 {
     GENERATED_BODY()

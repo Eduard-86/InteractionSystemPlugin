@@ -4,44 +4,30 @@
 UDM_InteractorProximity::UDM_InteractorProximity()
 {
 	//Super::Super();
-	SettingsClass = UDS_InteractorProximity::StaticClass();
 }
-
-void UDM_InteractorProximity::ExecuteActionEvent_Implementation(UModularSettingsBase* SettingsBlackboard,
-	UInteractionTargetCollisionModular* OwnerInteraction)
-{
-	Super::ExecuteActionEvent_Implementation(SettingsBlackboard, OwnerInteraction);
-
-	if(UDS_InteractorProximity* Setting = 
-		Cast<UDS_InteractorProximity>(SettingsBlackboard))
-	{
-		ModuleInteractorProximityThreshold = Setting->InteractorProximityThreshold;
-		ModuleIgnoreDeltaZ = Setting->IgnoreDeltaZ;
-		ModuleOwnerInteract = OwnerInteraction;
-
-		SetEnableFocus(true);
-	}
-	
-}
-
 
 
 float UDM_InteractorProximity::GetFocus_Implementation(const UInteractorComponent* TargetComponent) const
 {
 	FVector ProximityVector = FVector::ZeroVector;
 
+	if(!IsValid(OwnerInteractTarget))
+	{
+		return 0;
+	}
+	
 	if(ModuleIgnoreDeltaZ)
 	{
 		ProximityVector = FVector(
-			ModuleOwnerInteract->GetComponentLocation().X -
+			OwnerInteractTarget->GetComponentLocation().X -
 			TargetComponent->GetComponentLocation().X, 
-			ModuleOwnerInteract->GetComponentLocation().Y -
+			OwnerInteractTarget->GetComponentLocation().Y -
 			TargetComponent->GetComponentLocation().Y, 
 			0);
 	}
 	else
 	{
-		ProximityVector = ModuleOwnerInteract->GetComponentLocation() -
+		ProximityVector = OwnerInteractTarget->GetComponentLocation() -
 			TargetComponent->GetComponentLocation();
 	}
 

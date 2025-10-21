@@ -15,31 +15,30 @@ class UModuleDisplayTarget;
 
 class UInteractionFocusModularBase;
 
+
+
 UCLASS(Blueprintable, meta = (BlueprintSpawnableComponent, DisplayName = "Interaction Target Modular"), EditInlineNew)
 class INTERACTIONSYSTEM_API UInteractionTargetCollisionModular : public UInteractionTargetCollision
 {
     GENERATED_BODY()
 
 public:
+
     virtual void BeginPlay() override;
 
-#if WITH_EDITOR
-    virtual void PostEditChangeChainProperty(struct FPropertyChangedChainEvent& PropertyChangedEvent) override;
-#endif
-    
 protected:
-
-    UFUNCTION(BlueprintCallable)
-    void CreateModules();
 
     virtual float WantFocus_Implementation(const UInteractorComponent* InteractorComponent) const override;
 
-    UPROPERTY(BlueprintReadOnly, Category = "ModularTarget")
-    TArray<UModuleFocusTarget*> FocusModulesArray;
+    UPROPERTY(EditAnywhere, Instanced, BlueprintReadOnly, Category = "ModularTarget")
+    TArray<TObjectPtr<UModuleFocusTarget>> FocusModulesArray;
 
-    UPROPERTY(BlueprintReadOnly, Category = "ModularTarget")
-    TArray<UModuleDisplayTarget*> FocusModulesDisplay;
+    UPROPERTY(EditAnywhere, Instanced, BlueprintReadOnly, Category = "ModularTarget")
+    TArray <TObjectPtr<UModuleDisplayTarget>> FunctionalModules;
 
+protected:
+
+    void ModulesInit();
 
 #pragma region ModularSettings
 
@@ -60,23 +59,6 @@ protected:
 public:
     
 
-    // todo UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "ModularTarget", Instanced, meta = (ExposeOnSpawn = true)) //, Instanced
-            
-    //EditDefaultsOnly
-    UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Modular Target", meta = (DisplayName = "Focus Modules"))
-    TArray<TSubclassOf<UModuleFocusTarget>> FocusModules;
-
-    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "Modular Target", Instanced, meta = (DisplayName = "Focus Module Settings"))
-    TArray<UModularSettings*> ModularBlackboard;
-    
-
-    UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Modular Target", meta = (DisplayName = "Functional Modules"))
-    TArray<TSubclassOf<UModuleDisplayTarget>> DisplayModules;
-
-    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "Modular Target", Instanced, meta = (DisplayName = "Functional Module Settings"))
-    TArray<UModularDisplaySettings*> ModularDisplayBlackboard;
-
-    //static TArray<TSubclassOf<UModuleDisplayTarget>> DisplayModulesStatiñ;
 
     UFUNCTION(BlueprintCallable, BlueprintPure, Category = "Modular Target")
     TArray<UModuleFocusTarget*> GetFocusModules() { return TArray<UModuleFocusTarget*>(); } // TODO: functions
@@ -90,10 +72,6 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure, Category = "Modular Target", meta = (DeterminesOutputType = "Class"))
     TArray<UModuleDisplayTarget*> GetFunctionalModuleByClass(TSubclassOf<UModuleDisplayTarget> Class) { return TArray<UModuleDisplayTarget*>(); }
 
-#if WITH_EDITOR
-	virtual void PreEditChange(FEditPropertyChain& PropertyAboutToChange) override;
-    virtual void PreEditChange(FProperty* PropertyAboutToChange) override;
-#endif
 
     UFUNCTION()
     void GetFocusModule(const UInteractorComponent* InteractorComponent);
