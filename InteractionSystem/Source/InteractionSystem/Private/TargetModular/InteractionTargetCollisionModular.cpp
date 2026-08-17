@@ -30,6 +30,9 @@ float UInteractionTargetCollisionModular::WantFocus_Implementation(
 
 	for(TObjectPtr<UModuleFocusTarget> Modul : FocusModulesArray)
 	{
+		if (!IsValid(Modul))
+			break;
+
 		if(Modul->GetEnableFocus())
 		{
 			float ModelFocus = Modul->GetFocus(InteractorComponent);
@@ -73,11 +76,13 @@ void UInteractionTargetCollisionModular::ModulesInit()
 {
 	for (TObjectPtr<UModuleBaseTarget> FocusModule: FocusModulesArray)
 	{
-		FocusModule->Init(this);
+		if (IsValid(FocusModule))
+			FocusModule->Init(this);
 	}
 	for (TObjectPtr<UModuleBaseTarget> DisplayModule: FunctionalModules)
 	{
-		DisplayModule->Init(this);
+		if (IsValid(DisplayModule))
+			DisplayModule->Init(this);
 	}
 }
 

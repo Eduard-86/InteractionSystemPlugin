@@ -11,7 +11,7 @@
 /**
  * 
  */ 
-UCLASS(Blueprintable, meta = (DisplayName = "DM_InteractorRotation"))
+UCLASS(Blueprintable, meta = (DisplayName = "Rotation"))
 class INTERACTIONSYSTEM_API UDM_InteractorRotation : public UModuleFocusTarget
 {
 	GENERATED_BODY()

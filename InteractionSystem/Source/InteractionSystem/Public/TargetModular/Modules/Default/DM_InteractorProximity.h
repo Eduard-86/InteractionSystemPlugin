@@ -10,7 +10,7 @@
 /**
  * 
  */ 
-UCLASS(Blueprintable, meta = (DisplayName = "DM_InteractorProximity"))
+UCLASS(Blueprintable, meta = (DisplayName = "Proximity"))
 class INTERACTIONSYSTEM_API UDM_InteractorProximity : public UModuleFocusTarget
 {
 	GENERATED_BODY()
